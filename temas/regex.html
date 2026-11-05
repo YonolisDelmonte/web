@@ -429,7 +429,7 @@
                                         Admitir letras, números, espacios,
                                         comas, puntos, guiones y barras.
                                     -->
-                                    <input type="text" id="direccion" name="direccion" maxlength="" title="" required pattern="[a-zA-Z0-9áéíóúÁÉÍÓÚçÇñÑÜü ,.\-/]{5,80}" minlength="5" maxlength="80" />
+                                    <input type="text" id="direccion" name="direccion" maxlength="" title="La dirección debe tener entre 5 y 80 caracteres, admite letras, números, espacios, comas, puntos, guiones y barras" required pattern="[a-zA-Z0-9áéíóúÁÉÍÓÚçÇñÑÜü ,.\-/]{5,80}" minlength="5" maxlength="80" />
                                 </li>
 
                                 <li>
@@ -439,7 +439,7 @@
                                         PISTA:
                                         Entre 2 y 50 letras, espacios y guiones.
                                     -->
-                                    <input type="text" id="localidad" name="localidad" title="" required pattern="[a-zA-ZáéíóúÁÉÍÓÚçÇñÑÜü \-/]{2,50}" maxlength="50" minlength="2" />
+                                    <input type="text" id="localidad" name="localidad" title="La localidad debe tener entre 2 y 50 letras,espacios y guiones" required pattern="[a-zA-ZáéíóúÁÉÍÓÚçÇñÑÜü \-/]{2,50}" maxlength="50" minlength="2" />
                                 </li>
 
                                 <li>
@@ -451,7 +451,7 @@
                                         Los códigos postales españoles empiezan
                                         por un número entre 01 y 52.
                                     -->
-                                    <input type="text" id="cp" name="cp" placeholder="27001" minlength="5" maxlength="5" title="" required pattern="[0-5]{1}[0-9]{4}/" />
+                                    <input type="text" id="cp" name="cp" placeholder="27001" minlength="5" maxlength="5" title="El código postal debe tener exactamente 5 números entre 01 y 52" required pattern="[0-5]{1}[0-9]{4}/" />
                                 </li>
 
                                 <li>
@@ -462,7 +462,7 @@
                                         Dos cifras entre 01 y 52.
                                         Ejemplo: 27 para Lugo.
                                     -->
-                                    <input type="text" id="provincia" name="provincia" maxlength="2" minlength="2" title="" required pattern="(0[1-9]|[1-4]|5[0-2])" />
+                                    <input type="text" id="provincia" name="provincia" maxlength="2" minlength="2" title="El codigo de provincia debe tener exactamente dos cifras 01 y 52" required pattern="(0[1-9]|[1-4]|5[0-2])" />
                                 </li>
                                 <!-- Agregar un select con provincias españolas buscadas de internet -->
                             </ul>
