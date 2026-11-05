@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="robots" content="noIndex, noFollow" />
+        <meta name="description" content="Sitio web de prueba elaborado en el curso de Confección y Publicación de Páginas Web (IFCD0110). Unidad Formativa UF1303, Elaboración de hojas de estilos" />
+
+        <!-- Tipografias de terceros -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap" rel="stylesheet" />
+
+        <!-- Mis estilos -->
+        <link rel="stylesheet" href="../assets/css/visibilidad.css" />
+        <link rel="stylesheet" href="../assets/css/variables.css" />
+        <link rel="stylesheet" href="../assets/css/menu.css" />
+        <link rel="stylesheet" href="../assets/css/tranforms.css" />
+        <link rel="stylesheet" href="../assets/css/img.css" />
+        <link rel="stylesheet" href="../assets/css/formularios.css" />
+        <link rel="stylesheet" href="../assets/css/fonts.css" />
+        <!-- <link rel="stylesheet" href="../assets/css/hoverCss.css" /> -->
+        <link rel="stylesheet" href="../assets/css/estilos.css" />
+
+        <title>UF1303 | Elaboración de hojas de estilos</title>
+    </head>
+
+    <body>
+        <header class="">
+            <a href="../index.html" class="no-border" title="Página principal">
+                <figure class="logo"></figure>
+                <h1 class="pechado">Elaboración de hojas de estilos (UF1303)</h1>
+            </a>
+            <!-- Slogan -->
+            <p class="pechado">Hola mundo</p>
+        </header>
+
+        <nav class="principal" aria-label="Navegación principal">
+            <h2 class="pechado">Menú Principal</h2>
+            <input id="icon-menu" name="icon-menu" type="checkbox" />
+            <label for="icon-menu" class="icon-menu" aria-label="Abrir/Cerrar menú">Menú</label>
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Temas</a>
+                    <ul>
+                        <li>
+                            <a href="#">Textos</a>
+                        </li>
+                        <li>
+                            <a href="#">Imagenes</a>
+                        </li>
+                        <li><a href="#">Formularios</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../legal/lopd.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="../pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="agua">
+            <section>
+                <header class="img-before portada">
+                    <h2>Formularios</h2>
+                </header>
+
+                <article>
+                    <h3>Formularios varios</h3>
+                    <form action="../pages/enviados.html" method="post" class="form" enctype="multipart/form-data">
+                        <fieldset>
+                            <legend>Formulario de inscripcion a un curso</legend>
+
+                            <fieldset>
+                                <legend>Datos personales</legend>
+                                <ul>
+                                    <li>
+                                        <label for="edad">Edad</label>
+                                        <input type="number" name="edad" id="edad" min="18" max="100" />
+                                    </li>
+                                    <li>
+                                        <label for="precio-vivienda">Elige un precio de vivienda</label>
+                                        <input type="range" name="precio-vivienda" id="precio-vivienda" min="100000" step="5000" max="1000000" value="100000" />
+                                    </li>
+                                </ul>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>1. Nivel de conocimiento</legend>
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="nivel" id="nivel-0" value="0" required />
+                                        <label for="nivel-0">Principiante</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="nivel" id="nivel-1" value="1" />
+                                        <label for="nivel-1">Intemedio</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="nivel" id="nivel-2" value="2" />
+                                        <label for="nivel-2">Avanzado</label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>2. ¿En que modalidad quieres hacer el curso?</legend>
+                                <select name="modalidad" required>
+                                    <option value="">--Selecione una opcion--</option>
+                                    <option value="1">Precencial</option>
+                                    <option value="2">Semiprecencial</option>
+                                    <option value="3">Teleformacion</option>
+                                </select>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>3. ¿Que temas te interesan?</legend>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" name="temas[]" id="interes-1" value="INFORMATICA" required />
+                                        <label for="interes-1">Informatica</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="temas[]" id="interes-2" value="PROGRAMACION" />
+                                        <label for="interes-2">Programacion</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="temas[]" id="interes-3" value="DISEÑO GRAFICO" />
+                                        <label for="interes-3">Diseño grafico</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="temas[]" id="interes-4" value="INTELIGENCIA ARTIFICIAL" />
+                                        <label for="interes-4">Inteligencia artificial</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="temas[]" id="interes-5" value="MARKETING DIGITAL" />
+                                        <label for="interes-5">Marketing digital</label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>4. ¿Tienes experencia previa?</legend>
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="experencia" id="experencia-si" value="Si" required />
+                                        <label for="experencia-si">Si</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="experencia" id="experencia-no" value="No" />
+                                        <label for="experencia-no">No</label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>5. ¿Que dias tienes disponibilidad</legend>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" name="disponibilidad[]" id="dia-1" value="LUNES" required />
+                                        <label for="dia-1">Lunes</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="disponibilidad[]" id="dia-2" value="MARTES" />
+                                        <label for="dia-2">Martes</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="disponibilidad[]" id="dia-3" value="MIERCOLES" />
+                                        <label for="dia-3">Miercoles</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="disponibilidad[]" id="dia-4" value="JUEVES" />
+                                        <label for="dia-4">Jueves</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="disponibilidad[]" id="dia-5" value="VIERNES" />
+                                        <label for="dia-5">Viernes</label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <fieldset>
+                                <legend>6. ¿Como has conocido el curso?</legend>
+                                <select name="referencias" required>
+                                    <option value="1">Redes sociales</option>
+                                    <option value="2">Internet</option>
+                                    <option value="3">Amigos o Familia</option>
+                                    <option value="4">Publicidad</option>
+                                </select>
+                            </fieldset>
+                        </fieldset>
+                    </form>
+                </article>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>

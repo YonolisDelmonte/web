@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="robots" content="noIndex, noFollow" />
+        <meta name="description" content="Sitio web de prueba elaborado en el curso de Confección y Publicación de Páginas Web (IFCD0110). Unidad Formativa UF1303, Elaboración de hojas de estilos" />
+
+        <!-- Tipografias de terceros -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap" rel="stylesheet" />
+
+        <!-- Mis estilos -->
+        <link rel="stylesheet" href="../assets/css/visibilidad.css" />
+        <link rel="stylesheet" href="../assets/css/variables.css" />
+        <link rel="stylesheet" href="../assets/css/menu.css" />
+        <link rel="stylesheet" href="../assets/css/tranforms.css" />
+        <link rel="stylesheet" href="../assets/css/img.css" />
+        <link rel="stylesheet" href="../assets/css/formularios.css" />
+        <link rel="stylesheet" href="../assets/css/fonts.css" />
+        <!-- <link rel="stylesheet" href="assets/css/hoverCss.css" /> -->
+        <link rel="stylesheet" href="../assets/css/estilos.css" />
+
+        <title>UF1303 | Elaboración de hojas de estilos</title>
+    </head>
+
+    <body>
+        <header class="">
+            <a href="../index.html" class="no-border" title="Página principal">
+                <figure class="logo"></figure>
+                <h1 class="pechado">Elaboración de hojas de estilos (UF1303)</h1>
+            </a>
+            <!-- Slogan -->
+            <p class="pechado">Hola mundo</p>
+        </header>
+
+        <nav class="principal" aria-label="Navegación principal">
+            <h2 class="pechado">Menú Principal</h2>
+            <input id="icon-menu" name="icon-menu" type="checkbox" />
+            <label for="icon-menu" class="icon-menu" aria-label="Abrir/Cerrar menú">Menú</label>
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Temas</a>
+                    <ul>
+                        <li>
+                            <a href="#">Textos</a>
+                        </li>
+                        <li>
+                            <a href="#">Imagenes</a>
+                        </li>
+                        <li>
+                            <a href="../temas/formularios.html">Formularios</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../legal/lopd.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="agua">
+            <section>
+                <header class="img-before portada">
+                    <h2>Contactanos con nosotros</h2>
+                </header>
+
+                <article>
+                    <h3>Formulario de Contacto</h3>
+
+                    <form action="enviados.html" class="form" id="form" method="post" enctype="multipart/form-data">
+                        <fieldset>
+                            <legend>Datos Personales</legend>
+                            <ul>
+                                <li>
+                                    <label for="name">Nombre</label>
+                                    <input type="text" name="name" id="name" placeholder="Tu Nombre" required />
+                                </li>
+                                <li>
+                                    <label for="email">E-mail</label>
+                                    <input type="email" name="email" id="email" placeholder="Correo Electronico" required />
+                                </li>
+                                <li>
+                                    <label for="tfno">Telefono</label>
+                                    <input type="tel" name="tfno" id="tfno" placeholder="Telefono" />
+                                </li>
+                                <li>
+                                    <label for="edad">Edad</label>
+                                    <input type="number" name="edad" id="edad" placeholder="Tu Edad" />
+                                </li>
+                                <li>
+                                    <input type="radio" name="coche" id="coche-si" value="si" />
+                                    <label for="coche-si">Coche Propio: Si</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="coche" id="coche-no" value="no" />
+                                    <label for="coche-no">Coche Propio: No</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="acepto" id="acepto" required />
+                                    <label for="acepto">Acepto el uso de mis datos personales</label>
+                                </li>
+                                <li>
+                                    <label for="mensaje">Tu mensaje</label>
+                                    <textarea name="mensaje" id="mensaje" cols="100" rows="10" placeholder="Deja tu mensaje"></textarea>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <p id="errores"></p>
+                        <ul class="enviar">
+                            <li>
+                                <input type="submit" value="Enviar" id="enviar" />
+                            </li>
+                            <li>
+                                <input type="reset" value="Borrar" />
+                            </li>
+                        </ul>
+                    </form>
+                </article>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>
